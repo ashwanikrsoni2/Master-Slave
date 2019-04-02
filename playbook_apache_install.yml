@@ -1,0 +1,8 @@
+---
+ - name: run task on all host
+   hosts: DevOps
+   tasks:
+    - name: install apache
+      yum:
+       name: httpd
+       state: latest
